@@ -9,3 +9,17 @@ const fileNames = [
 
 // do not change the code above
 // add your code here
+
+async function getData(filename, i){
+	fetch(filename)
+	.then(data=>data.text())
+	.then(data=>{
+		// data = JSON.parse(data)
+		console.log(`File${i}`,data)
+	})
+}
+fileNames.forEach((el,i)=>{
+	getData(el,i)
+})
+
+
