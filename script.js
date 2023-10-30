@@ -15,7 +15,7 @@ async function getData(filename, i){
 	.then(data=>data.text())
 	.then(data=>{
 		// data = JSON.parse(data)
-		console.log(`File ${i+1}: This content is from file ${i+1}`)
+		console.log(`This content is from file ${i+1}`)
 	})
 }
 fileNames.forEach((el,i)=>{
